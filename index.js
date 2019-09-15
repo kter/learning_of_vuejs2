@@ -133,3 +133,36 @@ var app10 = new Vue({
   }
 })
 
+var app11 = new Vue({
+  el: '#app-11',
+  data: {
+    isActive: true,
+    hasError: false
+  }
+})
+
+var app12 = new Vue({
+  el: '#app-12',
+  data: {
+    classObject: {
+      active: true,
+      'text-danger': false
+    }
+  }
+})
+
+var app13 = new Vue({
+  el: '#app-13',
+  data: {
+    isActive: true,
+    error: null
+  },
+  computed: {
+    classObject: function() {
+      return {
+        active: this.isActive && !this.error,
+        'text-danger': this.error && this.error.type === 'fatal'
+      }
+    }
+  }
+})

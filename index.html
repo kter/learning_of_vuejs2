@@ -105,6 +105,30 @@
       <p>{{ answer }}</p>
     </div>
 
+    <div>
+      <p>クラスを動的に切り替える (インライン版)</p>
+      <div id="app-11"
+           v-bind:class="{ active: isActive, 'text-danger': hasError }"
+           >
+      </div>
+    </div>
+
+    <div>
+      <p>クラスを動的に切り替える (クラス版)</p>
+      <div id="app-12"
+           v-bind:class="classObject"
+           >
+      </div>
+    </div>
+
+    <div>
+      <p>クラスを動的に切り替える (computed properties版)</p>
+      <div id="app-13"
+           v-bind:class="classObject"
+           >
+      </div>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>
