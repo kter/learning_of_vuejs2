@@ -166,3 +166,11 @@ var app13 = new Vue({
     }
   }
 })
+
+var app14 = new Vue({
+  el: '#app-14',
+  data: {
+    activeClass: 'active',
+    errorClass: 'text-danger'
+  }
+})

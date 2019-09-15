@@ -129,6 +129,24 @@
       </div>
     </div>
 
+    <div>
+      <p>配列構文(クラスのリストを適用)</p>
+      <div id="app-14"
+           v-bind:class="[activeClass, errorClass]"
+           >
+      </div>
+      <p>三項演算子を使って条件に応じてクラスを切り替える</p>
+      <div id="app-15"
+           v-bind:class="[isActive ? activeClass : '', errorClass]"
+           >
+      </div>
+      <p>オブジェクト構文を使ってクラスを切り替える</p>
+      <div id="app-16"
+           v-bind:class="[{ active: isActive }, errorClass]"
+           >
+      </div>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>
