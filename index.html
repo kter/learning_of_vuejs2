@@ -1,6 +1,9 @@
 <html>
   <head>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+
     <meta http-equiv="content-type" charset="utf-8">
   </head>
   <body>
@@ -93,6 +96,13 @@
 
     <div id="app-9">
       <p>fullname: {{ fullname }}</p>
+    </div>
+
+    <div id="app-10">
+      <p>Ask a yes/no question:
+      <input v-model="question">
+      </p>
+      <p>{{ answer }}</p>
     </div>
 
     <script src="index.js"></script>
