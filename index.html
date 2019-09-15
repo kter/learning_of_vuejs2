@@ -48,6 +48,44 @@
       </ol>
     </div>
 
+    <p>
+    Vueのライフサイクルイベント
+    <img src="https://jp.vuejs.org/images/lifecycle.png" />
+    イベント内の処理のthisはVueインスタンスを指す。そのためアロー関数で定義するとthisが参照できない
+    </p>
+
+    <p>
+    isButtonDisabledがfalseだとこのボタンは表示されない
+    <button v-bind:disabled="isButtonDisabled">Button</button>
+    </p>
+
+    <p>
+    href属性をurlの値にバインドする
+    <a v-bind:href="url"></a>
+    </p>
+
+    <p>
+    clickイベントが発生したらclicked関数を呼ぶ
+    <a v-on:click="clicked"></a>
+    </p>
+
+    <p>
+    イベント名を動的にする
+    <a v-on:[eventName]="functionName"></a>
+    </p>
+
+    <p>
+    v-bindの省略記法
+    <a v-bind:href="url"></a>
+    <a :href="url"></a>
+    </p>
+
+    <p>
+    v-onの省略記法
+    <a v-on:click="functionName"></a>
+    <a @click="url"></a>
+    </p>
+
     <script src="index.js"></script>
   </body>
 </html>

@@ -61,5 +61,8 @@ var app7 = new Vue({
       { id: 1, text: 'Cheese'},
       { id: 2, text: 'Whatever else humans are supposed to eat' }
     ]
+  },
+  created: function () {
+    console.log('this is created life sycle hook');
   }
 })
