@@ -160,6 +160,43 @@
       >
       </div>
     </div>
+
+    <div>
+      <p>v-ifいろいろ</p>
+      <div id="app-19"
+           v-if="type === 'A'">
+        A
+      </div>
+      <div v-else-if="type === 'B'">
+        B
+      </div>
+      <div v-else>
+        Not A/B
+      </div>
+
+      <p>if等で要素を変更する際に再利用しないようにする</p>
+      <div id="app-20">
+        <template v-if="loginType === 'username'">
+          <label>Username</label>
+          <input placeholder="Enter your username">
+        </template>
+        <template v-else>
+          <label>Email</label>
+          <input placeholder="Enter your email address">
+        </template>
+      </div>
+    </div>
+
+    <div>
+      <p>条件的に要素を表示</p>
+      <p>v-showはdisplayCSSプロパティを切り替えているので常に描画される。また、template要素はサポートされない.</p>
+      <p>CSSプロパティを切り替えるだけなので、頻繁に切り替える場合はv-showを使うこと</p>
+      <div id="app-21"
+           v-show="ok"
+      >
+        Hello!
+      </div>
+
     <script src="index.js"></script>
   </body>
 </html>

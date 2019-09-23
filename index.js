@@ -192,3 +192,10 @@ var app18 = new Vue({
     }
   }
 })
+
+var app21 = new Vue({
+  el: '#app-21',
+  data: {
+    ok: true
+  }
+})
