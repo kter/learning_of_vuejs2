@@ -174,3 +174,21 @@ var app14 = new Vue({
     errorClass: 'text-danger'
   }
 })
+
+var app17 = new Vue({
+  el: '#app-17',
+  data: {
+    activeColor: 'red',
+    fontSize: 30
+  }
+})
+
+var app18 = new Vue({
+  el: '#app-18',
+  data: {
+    styleObject: {
+      color: 'red',
+      fontSize: '13px'
+    }
+  }
+})

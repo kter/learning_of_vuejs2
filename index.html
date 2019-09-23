@@ -147,6 +147,19 @@
       </div>
     </div>
 
+    <div>
+      <p>v-bind:style向けのオブジェクト構文</p>
+      <div id="app-17"
+           v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"
+           >
+      </div>
+
+      <p>オブジェクトをバインド (配列にすれば複数のスタイルオブジェクトを適用することができる)</p>
+      <div id="app-18"
+        v-bind:style="styleObject"
+      >
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
