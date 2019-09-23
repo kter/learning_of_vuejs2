@@ -196,7 +196,63 @@
       >
         Hello!
       </div>
+    </div>
 
+  <div>
+    <p>v-forで配列に要素をマッピングする(実はinではなくofでも可)</p>
+    <div id="app-22"
+         >
+         <ul id="example-1">
+           <li v-for="item in items">
+             {{ item.message }}
+           </li>
+         </ul>
+    </div>
+
+    <p>親スコープのプロパティへの完全なアクセスと配列のインデックス</p>
+    <div id="app-23">
+      <ul id="example-2">
+        <li v-for="item, index_ in items">
+          {{ parentMessage }} - {{ item }} - {{ item.message }}
+        </li>
+      </ul>
+    </div>
+
+    <p>オブジェクトのプロパティをv-forを使ってすべて呼び出す</p>
+    <div>
+      <ul id='app-24'>
+        <li v-for="value in object">
+          {{ value }}
+        </li>
+      </ul>
+  </div>
+
+  <p>キーも大丈夫</p>
+  <div>
+    <ul id='app-25'>
+      <li v-for="( value, name) in object">
+        {{ name }}: {{ value }}
+      </li>
+    </ul>
+  </div>
+
+  <p>キーに加えインデックスも大丈夫</p>
+  <div>
+    <ul id='app-26'>
+      <li v-for="( value, name, index) in object">
+        {{ index }}: {{ name }}: {{ value }}
+      </li>
+    </ul>
+  </div>
+
+  <p>再描画の際に追跡用のキーを付ける (繰り返しの内容が単純な場合以外は付けることが推奨される)</p>
+  <div>
+    <ul id='app-26'>
+      <li v-for="( value, name, index) in object" v-bind:key="item.id">
+        {{ index }}: {{ name }}: {{ value }}
+      </li>
+    </ul>
+  </div>
     <script src="index.js"></script>
   </body>
 </html>

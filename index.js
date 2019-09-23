@@ -199,3 +199,57 @@ var app21 = new Vue({
     ok: true
   }
 })
+
+var app22 = new Vue({
+  el: '#app-22',
+  data: {
+    items: [
+      { message: 'Foo' },
+      { message: 'Bar' },
+    ]
+  }
+})
+
+var app23 = new Vue({
+  el: '#app-23',
+  data: {
+    parentMessage: 'Parent',
+    items: [
+      { message: 'Foo' },
+      { message: 'Bar' }
+    ]
+  }
+})
+
+var app24 = new Vue({
+  el: '#app-24',
+  data: {
+    object: {
+      title: 'How to do lists in Vue',
+      author: 'Jane Doe',
+      publishedAt: '2016-04-10'
+    }
+  }
+})
+
+var app25 = new Vue({
+  el: '#app-25',
+  data: {
+    object: {
+      title: 'How to do lists in Vue',
+      author: 'Jane Doe',
+      publishedAt: '2016-04-10'
+    }
+  }
+})
+
+var app26 = new Vue({
+  el: '#app-26',
+  data: {
+    object: {
+      title: 'How to do lists in Vue',
+      author: 'Jane Doe',
+      publishedAt: '2016-04-10'
+    }
+  }
+})
